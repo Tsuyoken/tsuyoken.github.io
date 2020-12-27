@@ -1,0 +1,7 @@
+## Disable Directory Listing ##
+Options -Indexes 
+
+## Redirect Error document
+ErrorDocument 404 http://tkjsmkn2.sch.id/404/
+ErrorDocument 500 http://tkjsmkn2.sch.id/500/
+ErrorDocument 403 http://tkjsmkn2.sch.id/403/
