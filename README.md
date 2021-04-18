@@ -8,7 +8,7 @@ Hi, I'm Ferdi S Kennedy , my real name is Ferdian Cahya Sukma, i'm a Junior Prog
 ```
 ## Github Performance Overall
 
-![github stats](https://github-readme-stats.vercel.app/api?username=kennedy69&show_icons=true) 
+![github stats](https://github-readme-stats.vercel.app/api?username=Tsuyoken&show_icons=true) 
 
 ## Current activity
 
