@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- megrim, catamaran, code-saver : Adobe fonts -->
+  <link rel="stylesheet" href="https://use.typekit.net/wyk3jvy.css">
+
+  <!-- Manrope : Google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <!-- Custom styles -->
+  <link rel="stylesheet" href="css/main.min.css">
+
+  <!-- Favicon -->
+  <link rel="favicon" href="images/krish.png" type="image/x-icon">
+  <link rel="shortcut icon" href="images/krish.png" type="image/x-icon">
+
+  <title>Ferdi Kennedy</title>
+</head>
+
+<body>
+  <section class="hero">
+    <div class="hero__container">
+      <h6 class="hero__greet">
+        Hi, I am
+      </h6>
+      <h1 class="hero__title">
+        <span class="firstName">Ferdi</span>&nbsp;Kennedy
+      </h1>
+      <div class="hero__roles">
+        Student | Web Developer
+      </div>
+    </div>
+
+    <div class="hero__shape--square"></div>
+    <div class="hero__shape--circle"></div>
+    <div class="hero__watermark">DEV</div>
+
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a href="#" class="nav__link">
+            <span class="nav__item-icon-container">
+              <div class="nav__item-icon-container-inner">
+                <svg class="nav__item-icon">
+                  <use xlink:href="icons/sprite.svg#icon-target"></use>
+                </svg>
+              </div>
+            </span>
+            <span class="nav__item-text">Passion</span>
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">
+            <span class="nav__item-icon-container">
+              <div class="nav__item-icon-container-inner">
+                <svg class="nav__item-icon">
+                  <use xlink:href="icons/sprite.svg#icon-trello"></use>
+                </svg>
+              </div>
+            </span>
+            <span class="nav__item-text">Projects</span>
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">
+            <span class="nav__item-icon-container">
+              <div class="nav__item-icon-container-inner">
+                <svg class="nav__item-icon">
+                  <use xlink:href="icons/sprite.svg#icon-feather"></use>
+                </svg>
+              </div>
+            </span>
+            <span class="nav__item-text">Contact</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="social">
+      <a href="#" class="social__link github">
+        <span class="social__link-icon-container">
+          <div class="social__link-icon-container-inner">
+            <svg class="social__link-icon">
+              <use xlink:href="icons/sprite.svg#icon-github"></use>
+            </svg>
+          </div>
+        </span>
+      </a>
+      <a href="#" class="social__link twitter">
+        <span class="social__link-icon-container">
+          <div class="social__link-icon-container-inner">
+            <svg class="social__link-icon">
+              <use xlink:href="icons/sprite.svg#icon-twitter"></use>
+            </svg>
+          </div>
+        </span>
+      </a>
+      <a href="#" class="social__link instagram">
+        <span class="social__link-icon-container">
+          <div class="social__link-icon-container-inner">
+            <svg class="social__link-icon">
+              <use xlink:href="icons/sprite.svg#icon-instagram"></use>
+            </svg>
+          </div>
+        </span>
+      </a>
+    </div>
+  </section>
+  <div class="hero__shape--hexagon">
+    <img src="images/krish.png" alt="" class="hero__logo" />
+  </div>
+
+  <section class="roles">
+    <div class="roles__bubble"></div>
+    <div class="role">
+      <div class="role__illustration">
+        <img src="images/web-design.svg" alt="webb-design">
+      </div>
+      <div class="role__explanation">
+        <h6 class="title--small">
+          What do I do?
+        </h6>
+        <h3 class="role__title heading-tertiary">
+          I develop apps for the web!
+        </h3>
+        <p class="description">
+          I have worked on a number of good web projects as a full stack developer and also as frontend web developer in
+          a few projects. I have a very good experience
+          with Node and frameworks such as React and Express. I give constant updates and maintain my older projects to
+          ensure its free from bugs and vulnerabilities.
+        </p>
+      </div>
+    </div>
+    <div class="role">
+      <div class="role__explanation">
+        <h6 class="title--small">
+          Consistency is a key!
+        </h6>
+        <h3 class="role__title heading-tertiary">
+          Code, debug, lint, document
+        </h3>
+        <p class="description">
+          I concentrate on writing clean,
+          scalable and easily manageable well organized code. I follow the best practices and guidelines
+          used in popular open source softwares to ensure the code quality and check out code factor for issues
+          regularly. I'm trying my best to be consistent and working round the clock to keep
+          myself going.
+        </p>
+        <a href="https://github.com/Tsuyoken" class="btn">Check my repos</a>
+      </div>
+      <div class="role__illustration">
+        <img src="images/github.svg" alt="webb-design">
+      </div>
+    </div>
+  </section>
+
+  <section class="projects">
+    <div class="section-title">
+      <h2 class="heading-secondary u-text-center">Featured Projects</h2>
+    </div>
+
+    <div class="project">
+      <figure class="project__figure">
+        <img src="images/collegemate-light.png" alt="project-1" id="collegemate" class="project__image">
+      </figure>
+      <div class="project__details">
+        <div class="project__title">
+          <h4 class="project__name">Inventory</h4>
+          <span class="badge version">v2.2</span>
+        </div>
+        <p class="description project__description">
+         Information System Inventory using PHP language<br />
+        </p>
+        <ul class="features">
+          <li class="feature">Login Admin/User</li>
+          <li class="feature">Record the entry and exit of goods</li>
+          <li class="feature">Make a Report</li>
+          <li class="feature">List suppliers</li>
+          <li class="feature">Admin Dashboard</li>
+        </ul>
+        <div class="project__additional-details">
+          <span class="year">2020</span> &ndash;
+          <span class="language">JavaScript</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- <hr class="divider" /> -->
+
+    <div class="project">
+      <figure class="project__figure">
+        <img src="images/monarch.png" alt="project-1" id="trident" class="project__image">
+      </figure>
+      <div class="project__details">
+        <div class="project__title">
+          <h4 class="project__name">monArch</h4>
+          <span class="badge version">v1.3</span>
+        </div>
+        <p class="description project__description">
+          A pretty GNU/Linux distribution based Arch linux.
+        </p>
+        <ul class="features">
+          <li class="feature">Minimal</li>
+          <li class="feature">Cool & Pretty UI</li>
+          <li class="feature">Rolling Release</li>
+          <li class="feature">Xanmod Patched Kernel</li>
+          <li class="feature">Lightweight</li>
+        </ul>
+        <div class="project__additional-details">
+          <span class="year">2021</span> &ndash;
+          <span class="language">C</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="other-projects">
+
+    </div>
+  </section>
+</body>
+<script src="js/images.js"></script>
+
+</html>

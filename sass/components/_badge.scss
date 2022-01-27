@@ -1,0 +1,15 @@
+.badge {
+  display: inline-block;
+  border-radius: 3rem;
+  font-family: $font-family-default;
+  margin: .5rem 0;
+  padding: .5rem 2rem;
+  font-size: 1.4rem;
+  color: $color-white;
+
+  background-color: $color-primary-main;
+
+  @include theme(dark) {
+    background-color: $color-primary-light;
+  }
+}

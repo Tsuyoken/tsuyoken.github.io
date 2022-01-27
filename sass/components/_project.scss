@@ -1,0 +1,45 @@
+.project {
+  padding: 6rem 0;
+  display: flex;
+
+  &>* {
+    flex-basis: 50%;
+  }
+
+  &__title {
+    display: flex;
+    align-items: center;
+  }
+
+  &__name {
+    display: inline-block;
+    margin-right: auto;
+  }
+
+  &__figure {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__image {
+    width: 90%;
+    max-height: 25rem;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  &__additional-details {
+    font-size: 1.3rem;
+    font-weight: 600;
+
+    .year {}
+
+    .language {
+      color: $color-primary-main;
+
+      @include theme(dark) {
+        color: $color-primary-light;
+      }
+    }
+  }
+}

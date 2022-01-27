@@ -1,0 +1,34 @@
+.btn {
+
+  &,
+  &:link,
+  &:visited {
+    display: inline-block;
+    background-color: transparent;
+    border: 1px solid $color-primary-main;
+    font-size: 1.3rem;
+    font-family: $font-family-default;
+    text-decoration: none;
+    color: $color-primary-main;
+    font-weight: 600;
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+
+    background-image: linear-gradient(120deg, transparent 0%, transparent 50%, $color-primary-main 50%);
+    background-size: 220%;
+    transition: all .2s ease-in-out;
+
+    @include theme(dark) {
+      color: $color-primary-light;
+    }
+  }
+
+  &:hover,
+  &:active {
+    background-position: 100%;
+    color: $color-white;
+    box-shadow: 0 0 1rem $color-primary-dark;
+    // transform: translateX(1rem);
+  }
+}

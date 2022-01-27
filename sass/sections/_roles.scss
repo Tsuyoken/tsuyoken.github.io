@@ -1,0 +1,28 @@
+.roles {
+  width: 100%;
+  padding: 4rem 0;
+  margin: 4rem 0;
+  position: relative;
+
+  background-color: $color-even-section;
+
+  @include theme(dark) {
+    background-color: $color-gray-7;
+  }
+
+  &__bubble {
+    position: absolute;
+    right: 5rem;
+    top: 20rem;
+    height: 30rem;
+    width: 30rem;
+    border-radius: 50%;
+    background-color: rgba($color-primary-main, 0.2);
+    animation: wander-2 60s infinite;
+    z-index: 1;
+  }
+
+  .role * {
+    z-index: 100;
+  }
+}

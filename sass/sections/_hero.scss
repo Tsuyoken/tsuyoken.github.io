@@ -1,0 +1,114 @@
+.hero {
+  height: 100vh;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+
+  position: relative;
+  animation: 60s background-mover infinite;
+  overflow-x: hidden;
+
+  &__container {
+    margin: 4rem 8rem;
+    z-index: 150;
+  }
+
+  &__greet {
+    font-family: 'code-saver';
+    font-size: 1.4rem;
+    font-weight: 500;
+
+    z-index: 100;
+    animation: .6s float-in-top;
+  }
+
+  &__title {
+    font-size: 8rem;
+    font-weight: 100;
+    margin-left: -.6rem;
+
+    z-index: 100;
+    animation: .6s float-in-left;
+
+    .firstName {
+      font-weight: 600;
+    }
+  }
+
+  &__roles {
+    line-height: 1;
+    font-size: 2.4rem;
+
+    z-index: 100;
+    animation: .6s float-in-bottom;
+  }
+
+  &__watermark {
+    font-size: 25rem;
+    font-family: $font-family-default;
+    font-weight: 500;
+    opacity: .05;
+
+    position: absolute;
+    right: 5rem;
+    top: 50%;
+    transform: rotate(-90deg) translateX(50%);
+
+    z-index: 5;
+  }
+
+  &__shape--square {
+    position: absolute;
+    height: 20rem;
+    width: 20rem;
+    background-color: $color-primary-light;
+    opacity: .3;
+
+    animation: 120s wander-1 infinite;
+
+    z-index: 50;
+    clear: both;
+  }
+
+  &__shape--circle {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+
+
+    height: 20rem;
+    width: 20rem;
+    border-radius: 50%;
+    background-color: $color-primary-main;
+    opacity: .35;
+
+    animation: 120s wander-2 infinite;
+
+    z-index: 1;
+    clear: both;
+  }
+
+  &__shape--hexagon {
+    position: absolute;
+    bottom: -25%;
+    right: -10%;
+
+    height: 40rem;
+    width: 40rem;
+    opacity: .2;
+
+    z-index: 50;
+    overflow: hidden;
+
+    @include theme(dark) {
+      opacity: .4;
+    }
+  }
+
+  &__logo {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}

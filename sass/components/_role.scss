@@ -1,0 +1,33 @@
+.role {
+    display: flex;
+    max-width: 100rem;
+    margin: 4rem auto;
+
+    &:nth-of-type(odd) {
+      text-align: right;
+    }
+
+    &>div {
+      margin: 4rem 0;
+
+      &:not(:last-child) {
+        margin-right: 4rem;
+      }
+    }
+
+    &__illustration {
+      width: 50%;
+      height: auto;
+
+      &>img {
+        width: 100%;
+
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+
+    &__explanation {
+      width: 50%;
+    }
+  }

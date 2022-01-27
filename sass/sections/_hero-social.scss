@@ -1,0 +1,58 @@
+.social {
+  position: absolute;
+  top: 5%;
+  right: 2rem;
+
+  display: flex;
+  flex-direction: column;
+
+  &__link {
+    font-size: 1rem;
+    margin: 0 2rem;
+    padding: .5rem;
+
+    animation: .3s fade-and-scale-in;
+
+    &-icon-container {
+      height: 4rem;
+      width: 4.2rem;
+      padding: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      clip-path: polygon(50% 0, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+
+      transition: .3s all;
+    }
+
+    &-icon-container-inner {
+      height: 3.9rem;
+      width: 3.9rem;
+      padding: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      background-color: $color-white;
+      clip-path: polygon(50% 3%, 100% 25%, 100% 75%, 50% 97%, 0% 75%, 0% 25%);
+
+      @include theme(dark) {
+        background-color: $color-gray-8;
+      }
+    }
+
+    &-icon {
+      height: 1.5rem;
+      width: 1.5rem;
+      fill: $color-gray-6;
+    }
+
+    &:hover &-icon-container {
+      background-color: $color-primary-light;
+    }
+
+    &:hover &-icon {
+      fill: $color-primary-light;
+    }
+  }
+}

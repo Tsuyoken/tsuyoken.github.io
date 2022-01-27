@@ -1,0 +1,74 @@
+h1 {
+  font-family: 'megrim', sans-serif;
+}
+
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Manrope', sans-serif;
+}
+
+h4 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 2.5rem;
+}
+
+h6 {
+  font-size: 1.3rem;
+  font-family: 'code-saver', monospace;
+}
+
+body,
+input,
+button,
+select {
+  font-family: $font-family-secondary;
+}
+
+.heading-secondary {
+  font-size: 3.6rem;
+  color: $color-primary-light;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 3rem;
+
+  &::after {
+    content: "";
+    height: .8rem;
+    width: 20%;
+    position: absolute;
+    bottom: -1rem;
+    right: 0;
+
+    background-image: linear-gradient(to right, $color-primary-light, $color-primary-main, $color-primary-light);
+    border-radius: 1rem;
+    box-shadow: 0 .5rem 1rem rgba($color-primary-light, .6);
+  }
+}
+
+.heading-tertiary {
+  font-size: 3rem;
+  color: $color-primary-main;
+
+  @include theme(dark) {
+    color: $color-primary-light;
+  }
+}
+
+.description {
+  font-size: 1.8rem;
+  color: $color-gray-7;
+
+  @include theme(dark) {
+    color: $color-gray-4;
+  }
+}

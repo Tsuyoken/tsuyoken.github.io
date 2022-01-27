@@ -1,0 +1,46 @@
+.features {
+  font-size: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1.5rem auto;
+
+  .feature {
+    flex: 0 0 50%;
+    list-style: none;
+    transition: all .3s;
+    cursor: default;
+
+    &:hover {
+      transform: translateX(1rem);
+      color: $color-primary-main;
+      font-weight: 700;
+
+      @include theme(dark) {
+        color: lighten($color-primary-light, 2%);
+      }
+    }
+
+    &::before {
+      content: "";
+      display: inline-block;
+      height: 1.3rem;
+      width: 1.3rem;
+      margin-right: .5rem;
+
+
+      background-image: url(../icons/SVG/chevron-right.svg);
+      background-size: cover;
+
+      @supports (mask-image: url(../icons/SVG/chevron-right.svg)) or (--webkit-mask-image: url(../icons/SVG/chevron-right.svg)) {
+        background-color: $color-primary-main;
+        mask-image: url(../icons/SVG/chevron-right.svg);
+        mask-size: cover;
+        background-image: none;
+
+        @include theme(dark) {
+          background-color: $color-primary-light;
+        }
+      }
+    }
+  }
+}
